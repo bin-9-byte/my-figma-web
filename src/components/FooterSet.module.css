@@ -1,0 +1,184 @@
+.footer {
+  font-family: 'Rethink Sans', sans-serif;
+  color: #000;
+}
+
+/* Desktop Styles */
+.property1desktop {
+  display: block;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  margin-bottom: 2rem;
+}
+
+.contact {
+  display: flex;
+  gap: 5rem;
+}
+
+.address {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.hours {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  min-width: 200px;
+}
+
+.collectivGallery {
+  font-weight: 500;
+  font-size: 14px;
+  margin-bottom: 0.5rem;
+}
+
+.candylandLane {
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.tuesdayFriday {
+  font-size: 12px;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.links {
+  border-top: 1px solid #e0e0e0;
+  padding-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.social {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.twitter {
+  font-size: 12px;
+  color: #000;
+  text-decoration: none;
+}
+
+.twitter:hover {
+  text-decoration: underline;
+}
+
+.legal {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.allRightsReserved {
+  font-size: 12px;
+}
+
+.bottomSection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.arrowIcon,
+.logoIcon {
+  width: 24px;
+  height: 24px;
+}
+
+/* Tablet Styles */
+.property1tablet {
+  display: none;
+}
+
+/* Mobile Styles */
+.property1mobile {
+  display: none;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .property1desktop {
+    display: none;
+  }
+  
+  .property1tablet {
+    display: block;
+    max-width: 768px;
+    margin: 0 auto;
+    padding: 1.5rem;
+  }
+  
+  .contact {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .content {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .footerBottomSection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .footerArrowIcon,
+  .footerLogoIcon {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .property1tablet {
+    display: none;
+  }
+  
+  .property1mobile {
+    display: block;
+    padding: 1rem;
+  }
+  
+  .content2 {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .text {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .links2 {
+    border-top: 1px solid #e0e0e0;
+    padding-top: 1rem;
+    margin: 1rem 0;
+  }
+  
+  .bottomSection2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .arrowIcon2,
+  .logoIcon2 {
+    width: 18px;
+    height: 18px;
+  }
+}
