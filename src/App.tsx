@@ -1,30 +1,25 @@
-import { useState } from 'react';
-import Desktop from './components/home_desktop';
-import AboutDesktop from './components/about_desktop';
-import OnViewDesktop from './components/on_view_desktop';
+// ============================================================
+// 应用主组件
+// ============================================================
+// 功能：应用根组件，集成路由系统
+// 更新：2025-11-19 - 重构为使用 react-router-dom
+// ============================================================
+
+import { AppRouter } from './routes';
 import './App.css';
 
-// 定义页面类型
-type Page = 'home' | 'about' | 'onView';
-
+// ============================================================
+// App 组件
+// ============================================================
+// 说明：
+//   - 移除了原有的 useState 页面切换逻辑
+//   - 使用 react-router-dom 提供路由功能
+//   - 符合 Good Taste 原则：消除了 if/else 特殊情况
+// ============================================================
 function App() {
-  const [currentPage] = useState<Page>('home');
-
-  // 渲染当前页面的对应组件
-  const renderPage = () => {
-    if (currentPage === 'home') {
-      return <Desktop />;
-    } else if (currentPage === 'about') {
-      return <AboutDesktop />;
-    } else if (currentPage === 'onView') {
-      return <OnViewDesktop />;
-    }
-    return null;
-  };
-
   return (
     <div className="App">
-      {renderPage()}
+      <AppRouter />
     </div>
   );
 }
